@@ -35,11 +35,11 @@ In conclusion, this assignment highlights the potential of AI agents in real-wor
 
 Create a virtual environment 
 
-Add the dependencies or install the requiremnets.txt file
+Add the dependencies or install the **requiremnets.txt** file
 
-run uvicorn main:app --reload
+run **uvicorn main:app --reload**
 
-Testing use case for example :
+**Testing use case for example :**
 
 2024-12-21 00:50:58,340 - **User Query:** How many nodes are there in the cluster?
 
