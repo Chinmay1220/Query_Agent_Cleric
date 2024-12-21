@@ -248,7 +248,7 @@ def gather_kubernetes_data():
     except Exception as e:
         raise Exception(f"Error gathering Kubernetes information: {e}")
     
-    #fnt to send the data to gpt model
+#fnt to send the data to gpt model
 def query_llm(cluster_data, user_query):
     try:
         # Construct the prompt with both gathered Kubernetes data and the user query
