@@ -41,25 +41,25 @@ run **uvicorn main:app --reload**
 
 **Testing use case for example :**
 
- **User Query:** How many nodes are there in the cluster?
+ **User Query 1:** How many nodes are there in the cluster?
 
- **Agent Answer:** The cluster has 1 node.
+ **Agent Answer 1:** The cluster has 1 node.
 
- **User Query:** How many pods are currently running in the cluster?
+ **User Query 2:** How many pods are currently running in the cluster?
 
- **Agent Answer:** The cluster currently has 16 pods running.
+ **Agent Answer 2:** The cluster currently has 16 pods running.
 
- **User Query:** What is the AGE of pod named nginx'?
+ **User Query 3:** What is the AGE of pod named nginx'?
 
- **Agent Answer:** The age of the pod named "nginx-676b6c5bbc-rt792" is "14:51:24".
+ **Agent Answer 3:** The age of the pod named "nginx-676b6c5bbc-rt792" is "14:51:24".
 
- **User Query:** What type of redis-leader deployment is?
+ **User Query 4:** What type of redis-leader deployment is?
 
- **Agent Answer:** The type of the "redis-leader" deployment is "docker.io/redis".
+ **Agent Answer 4:** The type of the "redis-leader" deployment is "docker.io/redis".
 
- **User Query:** What is the status of all running pods in the cluster?
+ **User Query 5:** What is the status of all running pods in the cluster?
 
- **Agent Answer:** Here is the status of all running pods in the cluster:
+ **Agent Answer 5:** Here is the status of all running pods in the cluster:
 
 1. Pod Name: frontend-6b5f4cf68c-6g5lt, Namespace: default, Status: Running
    
