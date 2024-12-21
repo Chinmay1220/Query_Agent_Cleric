@@ -72,3 +72,7 @@ Testing use case for example :
 
 
 Loom video link - https://www.loom.com/share/65db4e32ce324decb1c8942fd1a1b71e?sid=213bdb19-495f-441e-be1f-3074b7946b54
+
+In this video, I demonstrate how I developed an AI agent to interact with a Kubernetes cluster, gathering crucial information like configuration details, deployments, and pods. The agent utilizes an LLM model to process data, make inferences, and provide precise answers related to the Kubernetes cluster. I showcase the code logic, deployment process, and testing of the applications, ensuring accurate responses to user queries.
+
+
