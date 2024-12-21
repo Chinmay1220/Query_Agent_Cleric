@@ -31,7 +31,7 @@ To take this a step further, adding the ability for the agent to learn and adapt
 
 In conclusion, this assignment highlights the potential of AI agents in real-world tasks, and I'm confident that with a bit more work, this agent could become even more autonomous and intelligent.
 
-**Steps to run the application**
+**Steps to run the application:**
 
 Create a virtual environment 
 
@@ -63,16 +63,16 @@ run **uvicorn main:app --reload**
 
 1. Pod Name: frontend-6b5f4cf68c-6g5lt, Namespace: default, Status: Running
    
-3. Pod Name: frontend-6b5f4cf68c-p84vz, Namespace: default, Status: Running
+2. Pod Name: frontend-6b5f4cf68c-p84vz, Namespace: default, Status: Running
    
-5. Pod Name: frontend-6b5f4cf68c-ws2r9, Namespace: default, Status: Running
+3. Pod Name: frontend-6b5f4cf68c-ws2r9, Namespace: default, Status: Running
    
-7. Pod Name: httpd-deployment-bf5c4df59-gpvh9, Namespace: default, Status: Running
+4. Pod Name: httpd-deployment-bf5c4df59-gpvh9, Namespace: default, Status: Running
    
-9. Pod Name: httpd-deployment-bf5c4df59-pqftr, Namespace:
+5. Pod Name: httpd-deployment-bf5c4df59-pqftr, Namespace:
 
 
-Loom video link - https://www.loom.com/share/65db4e32ce324decb1c8942fd1a1b71e?sid=213bdb19-495f-441e-be1f-3074b7946b54
+**Loom video link:** - https://www.loom.com/share/65db4e32ce324decb1c8942fd1a1b71e?sid=213bdb19-495f-441e-be1f-3074b7946b54
 
 In this video, I have demonstrated how I developed an AI agent to interact with a Kubernetes cluster, gathering crucial information like configuration details, deployments, and pods. The agent utilizes an LLM model to process data, make inferences, and provide precise answers related to the Kubernetes cluster. I showcase the code logic, deployment process, and testing of the applications, ensuring accurate responses to user queries.
 
