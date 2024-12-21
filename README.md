@@ -13,6 +13,7 @@ The action the AI agent takes is to return the generated response to the user. T
 The AI agent's goal is to assist users by answering queries about the Kubernetes cluster. This aligns with the goal-oriented behavior of AI agents, as it is working towards fulfilling user requests.
 
 **Why It's an AI Agent:**
+
 Autonomy: Your agent autonomously retrieves Kubernetes cluster data and processes it to generate answers, without needing explicit step-by-step user instructions after initialization.
 
 Perception: It actively collects information from the environment (Kubernetes cluster configuration).
@@ -39,22 +40,35 @@ Add the dependencies or install the requiremnets.txt file
 run uvicorn main:app --reload
 
 Testing use case for example :
-2024-12-21 00:50:58,340 - User Query: How many nodes are there in the cluster?
-2024-12-21 00:50:58,341 - Agent Answer: The cluster has 1 node.
-2024-12-21 00:51:53,542 - User Query: How many pods are currently running in the cluster?
-2024-12-21 00:51:53,543 - Agent Answer: The cluster currently has 16 pods running.
-2024-12-21 00:52:27,983 - User Query: What is the AGE of pod named nginx'?
-2024-12-21 00:52:27,984 - Agent Answer: The age of the pod named "nginx-676b6c5bbc-rt792" is "14:51:24".
-2024-12-21 00:53:14,030 - User Query: What type of redis-leader deployment is?
-2024-12-21 00:53:14,031 - Agent Answer: The type of the "redis-leader" deployment is "docker.io/redis".
-2024-12-21 00:53:48,695 - User Query: What is the status of all running pods in the cluster?
-2024-12-21 00:53:48,696 - Agent Answer: Here is the status of all running pods in the cluster:
+2024-12-21 00:50:58,340 - **User Query:** How many nodes are there in the cluster?
+
+2024-12-21 00:50:58,341 - **Agent Answer:** The cluster has 1 node.
+
+2024-12-21 00:51:53,542 - **User Query:** How many pods are currently running in the cluster?
+
+2024-12-21 00:51:53,543 - **Agent Answer:** The cluster currently has 16 pods running.
+
+2024-12-21 00:52:27,983 - **User Query:** What is the AGE of pod named nginx'?
+
+2024-12-21 00:52:27,984 - **Agent Answer:** The age of the pod named "nginx-676b6c5bbc-rt792" is "14:51:24".
+
+2024-12-21 00:53:14,030 - **User Query:** What type of redis-leader deployment is?
+
+2024-12-21 00:53:14,031 - **Agent Answer:** The type of the "redis-leader" deployment is "docker.io/redis".
+
+2024-12-21 00:53:48,695 - **User Query:** What is the status of all running pods in the cluster?
+
+2024-12-21 00:53:48,696 - **Agent Answer:** Here is the status of all running pods in the cluster:
 
 1. Pod Name: frontend-6b5f4cf68c-6g5lt, Namespace: default, Status: Running
-2. Pod Name: frontend-6b5f4cf68c-p84vz, Namespace: default, Status: Running
-3. Pod Name: frontend-6b5f4cf68c-ws2r9, Namespace: default, Status: Running
-4. Pod Name: httpd-deployment-bf5c4df59-gpvh9, Namespace: default, Status: Running
-5. Pod Name: httpd-deployment-bf5c4df59-pqftr, Namespace:
+   
+3. Pod Name: frontend-6b5f4cf68c-p84vz, Namespace: default, Status: Running
+   
+5. Pod Name: frontend-6b5f4cf68c-ws2r9, Namespace: default, Status: Running
+   
+7. Pod Name: httpd-deployment-bf5c4df59-gpvh9, Namespace: default, Status: Running
+   
+9. Pod Name: httpd-deployment-bf5c4df59-pqftr, Namespace:
 
 
 Loom video link - https://www.loom.com/share/65db4e32ce324decb1c8942fd1a1b71e?sid=213bdb19-495f-441e-be1f-3074b7946b54
