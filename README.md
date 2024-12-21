@@ -95,15 +95,16 @@ This project implements an AI agent capable of interacting with a Kubernetes clu
 
 ---
 
-## Setup Instructions
+## Steps to Set Up and Run the Cleric Query Agent
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/cleric-query-agent.git
-   cd cleric-query-agent
-  
-   
-   pip install -r requirements.txt
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/cleric-query-agent.git
+cd cleric-query-agent
+
+
+### 1. Clone the Repository
+  pip install -r requirements.txt
  
 
 ```bash
