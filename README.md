@@ -103,6 +103,11 @@ This project implements an AI agent capable of interacting with a Kubernetes clu
    git clone https://github.com/yourusername/cleric-query-agent.git
    cd cleric-query-agent
 
+1. **Install Dependencies**
+   ```bash
+   git clone https://github.com/yourusername/cleric-query-agent.git
+   cd cleric-query-agent
+
 # Install Dependencies
 
 pip install -r requirements.txt
