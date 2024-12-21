@@ -105,8 +105,10 @@ This project implements an AI agent capable of interacting with a Kubernetes clu
 ```bash
     pip install -r requirements.txt
 
+```bash
 export OPENAI_API_KEY="your_api_key"
 
+```bash
 python main.py
 
 
