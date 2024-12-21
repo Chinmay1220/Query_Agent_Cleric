@@ -1,5 +1,9 @@
 # Query_Agent_Cleric
 
+# Cleric Query Agent
+
+This project implements an AI agent capable of interacting with a Kubernetes cluster to answer queries about deployed applications. The agent uses GPT-4 for natural language processing and provides a Flask API for query submission.
+
 **Approach for the AI Agent:**
 The agent collects information about the Kubernetes cluster, such as configuration details, deployments, pods, etc. This is the phase where the agent gathers data about its environment.
 
@@ -12,15 +16,51 @@ The action the AI agent takes is to return the generated response to the user. T
 **Goal-Oriented Behavior:**
 The AI agent's goal is to assist users by answering queries about the Kubernetes cluster. This aligns with the goal-oriented behavior of AI agents, as it is working towards fulfilling user requests.
 
-**Why It's an AI Agent:**
+---
 
-Autonomy: Your agent autonomously retrieves Kubernetes cluster data and processes it to generate answers, without needing explicit step-by-step user instructions after initialization.
+## Features
 
-Perception: It actively collects information from the environment (Kubernetes cluster configuration).
+- Uses Kubernetes API to gather information about cluster resources.
+- Processes natural language queries via GPT-4.
+- Provides a REST API for submitting and retrieving query results.
+- Logs all activity to `agent.log` for debugging.
 
-Reasoning: It uses an LLM (which can reason based on the data) to generate answers to queries.
+---
 
-Action: It provides answers back to the user.
+## Requirements
+
+- Python 3.10 or later
+- Kubernetes cluster (configured via `~/.kube/config`)
+- OpenAI API key for GPT-4
+- Dependencies specified in `requirements.txt`
+
+---
+
+## Steps to Set Up and Run the Cleric Query Agent
+
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Chinmay1220/Query_Agent_Cleric.git
+   cd Query_Agent_Cleric
+
+1. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+1. **Set the API Key**
+   ```bash
+   export OPENAI_API_KEY="your_api_key"
+
+1. **Run the Application**
+   ```bash
+   python main.py
+
+
+**Loom video link:** - https://www.loom.com/share/65db4e32ce324decb1c8942fd1a1b71e?sid=213bdb19-495f-441e-be1f-3074b7946b54
+
+In this video, I have demonstrated how I developed an AI agent to interact with a Kubernetes cluster, gathering crucial information like configuration details, deployments, and pods. The agent utilizes an LLM model to process data, make inferences, and provide precise answers related to the Kubernetes cluster. I showcase the code logic, deployment process, and testing of the applications, ensuring accurate responses to user queries.
+
 
 **Conclusion:**
 To wrap things up, this assignment really showcases how AI can interact with a Kubernetes cluster to answer queries. My approach involves gathering information from the cluster, using GPT-4 to process it, and delivering responses to the user. This is a good example of an AI agent in action, as it autonomously collects data, reasons through it, and takes action by answering queries.
@@ -70,54 +110,5 @@ run **uvicorn main:app --reload**
 4. Pod Name: httpd-deployment-bf5c4df59-gpvh9, Namespace: default, Status: Running
    
 5. Pod Name: httpd-deployment-bf5c4df59-pqftr, Namespace:
-
-# Cleric Query Agent
-
-This project implements an AI agent capable of interacting with a Kubernetes cluster to answer queries about deployed applications. The agent uses GPT-4 for natural language processing and provides a Flask API for query submission.
-
----
-
-## Features
-
-- Uses Kubernetes API to gather information about cluster resources.
-- Processes natural language queries via GPT-4.
-- Provides a REST API for submitting and retrieving query results.
-- Logs all activity to `agent.log` for debugging.
-
----
-
-## Requirements
-
-- Python 3.10 or later
-- Kubernetes cluster (configured via `~/.kube/config`)
-- OpenAI API key for GPT-4
-- Dependencies specified in `requirements.txt`
-
----
-
-## Steps to Set Up and Run the Cleric Query Agent
-
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Chinmay1220/Query_Agent_Cleric.git
-   cd Query_Agent_Cleric
-
-1. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-
-1. **Set the API Key**
-   ```bash
-   export OPENAI_API_KEY="your_api_key"
-
-1. **Run the Application**
-   ```bash
-   python main.py
-
-
-**Loom video link:** - https://www.loom.com/share/65db4e32ce324decb1c8942fd1a1b71e?sid=213bdb19-495f-441e-be1f-3074b7946b54
-
-In this video, I have demonstrated how I developed an AI agent to interact with a Kubernetes cluster, gathering crucial information like configuration details, deployments, and pods. The agent utilizes an LLM model to process data, make inferences, and provide precise answers related to the Kubernetes cluster. I showcase the code logic, deployment process, and testing of the applications, ensuring accurate responses to user queries.
 
 
