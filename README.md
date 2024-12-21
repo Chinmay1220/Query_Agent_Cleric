@@ -71,6 +71,37 @@ run **uvicorn main:app --reload**
    
 5. Pod Name: httpd-deployment-bf5c4df59-pqftr, Namespace:
 
+# Cleric Query Agent
+
+This project implements an AI agent capable of interacting with a Kubernetes cluster to answer queries about deployed applications. The agent uses GPT-4 for natural language processing and provides a Flask API for query submission.
+
+---
+
+## Features
+
+- Uses Kubernetes API to gather information about cluster resources.
+- Processes natural language queries via GPT-4.
+- Provides a REST API for submitting and retrieving query results.
+- Logs all activity to `agent.log` for debugging.
+
+---
+
+## Requirements
+
+- Python 3.10 or later
+- Kubernetes cluster (configured via `~/.kube/config`)
+- OpenAI API key for GPT-4
+- Dependencies specified in `requirements.txt`
+
+---
+
+## Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/cleric-query-agent.git
+   cd cleric-query-agent
+
 
 **Loom video link:** - https://www.loom.com/share/65db4e32ce324decb1c8942fd1a1b71e?sid=213bdb19-495f-441e-be1f-3074b7946b54
 
