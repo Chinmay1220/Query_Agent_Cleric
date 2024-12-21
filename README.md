@@ -101,11 +101,10 @@ This project implements an AI agent capable of interacting with a Kubernetes clu
    ```bash
    git clone https://github.com/yourusername/cleric-query-agent.git
    cd cleric-query-agent
-   ```bash
+  
    
- ```bash
     pip install -r requirements.txt
- ```bash
+ 
 
 ```bash
    export OPENAI_API_KEY="your_api_key"
