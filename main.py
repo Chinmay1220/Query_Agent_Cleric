@@ -19,6 +19,7 @@ app = Flask(__name__)
 #Pydantic model for user query
 class UserQuery(BaseModel):
     query: str
+    answer: str
 
 #fnt for gathering the kubernetes data
 def gather_kubernetes_data():
