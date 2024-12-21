@@ -40,6 +40,7 @@ Add the dependencies or install the requiremnets.txt file
 run uvicorn main:app --reload
 
 Testing use case for example :
+
 2024-12-21 00:50:58,340 - **User Query:** How many nodes are there in the cluster?
 
 2024-12-21 00:50:58,341 - **Agent Answer:** The cluster has 1 node.
@@ -73,6 +74,6 @@ Testing use case for example :
 
 Loom video link - https://www.loom.com/share/65db4e32ce324decb1c8942fd1a1b71e?sid=213bdb19-495f-441e-be1f-3074b7946b54
 
-In this video, I demonstrate how I developed an AI agent to interact with a Kubernetes cluster, gathering crucial information like configuration details, deployments, and pods. The agent utilizes an LLM model to process data, make inferences, and provide precise answers related to the Kubernetes cluster. I showcase the code logic, deployment process, and testing of the applications, ensuring accurate responses to user queries.
+In this video, I have demonstrated how I developed an AI agent to interact with a Kubernetes cluster, gathering crucial information like configuration details, deployments, and pods. The agent utilizes an LLM model to process data, make inferences, and provide precise answers related to the Kubernetes cluster. I showcase the code logic, deployment process, and testing of the applications, ensuring accurate responses to user queries.
 
 
