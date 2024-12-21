@@ -3,18 +3,19 @@ import os
 import json
 import openai
 from kubernetes import client, config
-from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import logging
 from datetime import datetime, timezone
+from flask import Flask, request, jsonify
 
 
 # Set up logs
 LOG_FILE = "agent.log"
 logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format="%(asctime)s - %(message)s")
 
-#fast api
-app = FastAPI()
+# Initialize Flask app
+app = Flask(__name__)
+
 #Pydantic model for user query
 class UserQuery(BaseModel):
     query: str
@@ -280,29 +281,26 @@ def query_llm(cluster_data, user_query):
     except Exception as e:
         raise Exception(f"Error querying the LLM: {e}")
 
-#fastapi endpoint
-
-@app.post("/query/")
-async def query_kubernetes(query: UserQuery):
+# Flask endpoint to handle user queries
+@app.route("/query/", methods=["POST"])
+def query_kubernetes():
     try:
-        # Gather Kubernetes cluster data
+        user_query = request.json.get('query')
+        if not user_query:
+            return jsonify({"error": "Query is required"}), 400
+        
         cluster_data = gather_kubernetes_data()
-
-        # Get the user query
-        user_query = query.query
-
-        # Query the LLM with the gathered data and user query
         answer = query_llm(cluster_data, user_query)
 
-        # Log the query and the answer to the log file
         logging.info(f"User Query: {user_query}")
         logging.info(f"Agent Answer: {answer}")
 
-        # Return the answer as JSON response
-        return {"answer": answer}
+        return jsonify({"answer": answer})
 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        return jsonify({"error": str(e)}), 500
 
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000)
 
 
