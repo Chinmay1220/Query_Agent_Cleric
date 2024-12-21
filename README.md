@@ -103,17 +103,14 @@ git clone https://github.com/yourusername/cleric-query-agent.git
 cd cleric-query-agent
 
 
-### 1. Clone the Repository
-  pip install -r requirements.txt
- 
+pip install -r requirements.txt
 
-```bash
-   export OPENAI_API_KEY="your_api_key"
-```bash
+export OPENAI_API_KEY="your_api_key"
 
-     ```bash
+
+bash
    python main.py
-      ```bash
+bash
 
 **Loom video link:** - https://www.loom.com/share/65db4e32ce324decb1c8942fd1a1b71e?sid=213bdb19-495f-441e-be1f-3074b7946b54
 
