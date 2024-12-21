@@ -44,14 +44,14 @@ def gather_kubernetes_data():
         deployments = apps_api.list_deployment_for_all_namespaces()
         cluster_info["deployments"] = [
         {
-        "name": dep.metadata.name,
-        "namespace": dep.metadata.namespace,
-        "replicas": dep.spec.replicas,
-        "type": [c.image.split(":")[0] for c in dep.spec.template.spec.containers],  # Container image name as type
-        "port": [
-            p.container_port for c in dep.spec.template.spec.containers if c.ports for p in c.ports
-        ],
-        "age": str(datetime.now(timezone.utc) - dep.metadata.creation_timestamp).split(".")[0],  # Human-readable age
+                "name": dep.metadata.name,
+                "namespace": dep.metadata.namespace,
+                "replicas": dep.spec.replicas,
+                "type": [c.image.split(":")[0] for c in dep.spec.template.spec.containers],  # Container image name as type
+                "port": [
+                    p.container_port for c in dep.spec.template.spec.containers if c.ports for p in c.ports
+                        ],
+                "age": str(datetime.now(timezone.utc) - dep.metadata.creation_timestamp).split(".")[0],  # Human-readable age
         }
              for dep in deployments.items
         ]
