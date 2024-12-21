@@ -43,7 +43,7 @@ def gather_kubernetes_data():
         # Deployments
         deployments = apps_api.list_deployment_for_all_namespaces()
         cluster_info["deployments"] = [
-        {
+            {
                 "name": dep.metadata.name,
                 "namespace": dep.metadata.namespace,
                 "replicas": dep.spec.replicas,
@@ -52,7 +52,7 @@ def gather_kubernetes_data():
                     p.container_port for c in dep.spec.template.spec.containers if c.ports for p in c.ports
                         ],
                 "age": str(datetime.now(timezone.utc) - dep.metadata.creation_timestamp).split(".")[0],  # Human-readable age
-        }
+            }
              for dep in deployments.items
         ]
         
@@ -121,7 +121,7 @@ def gather_kubernetes_data():
                 "volume_mode": pv.spec.volume_mode or "Filesystem",  # Volume mode (default to Filesystem)
                 "claim": pv.spec.claim_ref.name if pv.spec.claim_ref else "Unbound",  # Bound PVC name or Unbound
                 "age": str(datetime.now(timezone.utc) - pv.metadata.creation_timestamp).split(".")[0],  # Human-readable age
-        }   
+            }   
             for pv in pvs.items
         ]
 
