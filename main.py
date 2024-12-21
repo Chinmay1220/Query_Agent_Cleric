@@ -265,7 +265,7 @@ def query_llm(cluster_data, user_query):
         """
 
 # Set your OpenAI API key here
-        openai.api_key = 'OPENAI_API_KEY'
+        openai.api_key = os.getenv('OPENAI_API_KEY')
 
 # Send the prompt to GPT-4 using the v1/chat/completions endpoint
         response = openai.ChatCompletion.create(
