@@ -103,7 +103,7 @@ This project implements an AI agent capable of interacting with a Kubernetes clu
    cd cleric-query-agent
   
    
-    pip install -r requirements.txt
+   pip install -r requirements.txt
  
 
 ```bash
