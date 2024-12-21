@@ -59,24 +59,6 @@ The AI agent's goal is to assist users by answering queries about the Kubernetes
 
 In this video, I have demonstrated how I developed an AI agent to interact with a Kubernetes cluster, gathering crucial information like configuration details, deployments, and pods. The agent utilizes an LLM model to process data, make inferences, and provide precise answers related to the Kubernetes cluster. I showcase the code logic, deployment process, and testing of the applications, ensuring accurate responses to user queries.
 
-
-**Conclusion:**
-To wrap things up, this assignment really showcases how AI can interact with a Kubernetes cluster to answer queries. My approach involves gathering information from the cluster, using GPT-4 to process it, and delivering responses to the user. This is a good example of an AI agent in action, as it autonomously collects data, reasons through it, and takes action by answering queries.
-
-While the reasoning part currently relies on OpenAI's GPT, which isn't an internal AI model, the agent still operates in a very intelligent way by handling the tasks independently. The agent essentially does everything needed to fulfill the user's requests without needing step-by-step guidance.
-
-To take this a step further, adding the ability for the agent to learn and adapt based on user feedback would make it even smarter. But even without that, it already meets many of the key aspects of an AI agent.
-
-In conclusion, this assignment highlights the potential of AI agents in real-world tasks, and I'm confident that with a bit more work, this agent could become even more autonomous and intelligent.
-
-**Steps to run the application:**
-
-Create a virtual environment 
-
-Add the dependencies or install the **requiremnets.txt** file
-
-run **uvicorn main:app --reload**
-
 **Testing use case for example :**
 
  **User Query 1:** How many nodes are there in the cluster?
@@ -108,5 +90,14 @@ run **uvicorn main:app --reload**
 4. Pod Name: httpd-deployment-bf5c4df59-gpvh9, Namespace: default, Status: Running
    
 5. Pod Name: httpd-deployment-bf5c4df59-pqftr, Namespace:
+
+**Conclusion:**
+To wrap things up, this assignment really showcases how AI can interact with a Kubernetes cluster to answer queries. My approach involves gathering information from the cluster, using GPT-4 to process it, and delivering responses to the user. This is a good example of an AI agent in action, as it autonomously collects data, reasons through it, and takes action by answering queries.
+
+While the reasoning part currently relies on OpenAI's GPT, which isn't an internal AI model, the agent still operates in a very intelligent way by handling the tasks independently. The agent essentially does everything needed to fulfill the user's requests without needing step-by-step guidance.
+
+To take this a step further, adding the ability for the agent to learn and adapt based on user feedback would make it even smarter. But even without that, it already meets many of the key aspects of an AI agent.
+
+In conclusion, this assignment highlights the potential of AI agents in real-world tasks, and I'm confident that with a bit more work, this agent could become even more autonomous and intelligent.
 
 
