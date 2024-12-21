@@ -41,25 +41,25 @@ run **uvicorn main:app --reload**
 
 **Testing use case for example :**
 
-2024-12-21 00:50:58,340 - **User Query:** How many nodes are there in the cluster?
+ **User Query:** How many nodes are there in the cluster?
 
-2024-12-21 00:50:58,341 - **Agent Answer:** The cluster has 1 node.
+ **Agent Answer:** The cluster has 1 node.
 
-2024-12-21 00:51:53,542 - **User Query:** How many pods are currently running in the cluster?
+ **User Query:** How many pods are currently running in the cluster?
 
-2024-12-21 00:51:53,543 - **Agent Answer:** The cluster currently has 16 pods running.
+ **Agent Answer:** The cluster currently has 16 pods running.
 
-2024-12-21 00:52:27,983 - **User Query:** What is the AGE of pod named nginx'?
+ **User Query:** What is the AGE of pod named nginx'?
 
-2024-12-21 00:52:27,984 - **Agent Answer:** The age of the pod named "nginx-676b6c5bbc-rt792" is "14:51:24".
+ **Agent Answer:** The age of the pod named "nginx-676b6c5bbc-rt792" is "14:51:24".
 
-2024-12-21 00:53:14,030 - **User Query:** What type of redis-leader deployment is?
+ **User Query:** What type of redis-leader deployment is?
 
-2024-12-21 00:53:14,031 - **Agent Answer:** The type of the "redis-leader" deployment is "docker.io/redis".
+ **Agent Answer:** The type of the "redis-leader" deployment is "docker.io/redis".
 
-2024-12-21 00:53:48,695 - **User Query:** What is the status of all running pods in the cluster?
+ **User Query:** What is the status of all running pods in the cluster?
 
-2024-12-21 00:53:48,696 - **Agent Answer:** Here is the status of all running pods in the cluster:
+ **Agent Answer:** Here is the status of all running pods in the cluster:
 
 1. Pod Name: frontend-6b5f4cf68c-6g5lt, Namespace: default, Status: Running
    
