@@ -102,6 +102,12 @@ This project implements an AI agent capable of interacting with a Kubernetes clu
    git clone https://github.com/yourusername/cleric-query-agent.git
    cd cleric-query-agent
 
+pip install -r requirements.txt
+
+export OPENAI_API_KEY="your_api_key"
+
+python main.py
+
 
 **Loom video link:** - https://www.loom.com/share/65db4e32ce324decb1c8942fd1a1b71e?sid=213bdb19-495f-441e-be1f-3074b7946b54
 
