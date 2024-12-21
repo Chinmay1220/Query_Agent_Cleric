@@ -1,7 +1,5 @@
 # Query_Agent_Cleric
 
-# Cleric Query Agent
-
 This project implements an AI agent capable of interacting with a Kubernetes cluster to answer queries about deployed applications. The agent uses GPT-4 for natural language processing and provides a Flask API for query submission.
 
 **Approach for the AI Agent:**
