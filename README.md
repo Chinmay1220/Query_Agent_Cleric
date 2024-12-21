@@ -101,6 +101,7 @@ This project implements an AI agent capable of interacting with a Kubernetes clu
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/Chinmay1220/Query_Agent_Cleric.git
+   cd Query_Agent_Cleric
 
 1. **Install Dependencies**
    ```bash
